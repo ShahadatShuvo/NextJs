@@ -1,8 +1,14 @@
+import Head from "next/head";
 import React from "react";
+import MetaTags from "../components/Meta";
 
 function about() {
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
+      <MetaTags />
       <h2 className="text-3xl text-center">Welcome to About page</h2>
       <p className="mt-5">
         Shahadat Shuvo is a 24-year-old health centre receptionist who enjoys

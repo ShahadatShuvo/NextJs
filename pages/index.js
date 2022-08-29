@@ -6,12 +6,11 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Home</title>
-        <meta name="description" content="Shahadats blog" />
-      </Head>
-      <MetaTags />
-
+      <MetaTags
+        title="Home"
+        description="this is Home page"
+        keywords="Home, index"
+      />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Shahadats Blog!</a>

@@ -1,9 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import MetaTags from "../components/Meta";
 
 function Blog() {
   return (
     <div>
+      <MetaTags
+        title="Blogs"
+        description="this is blog page"
+        keywords="blog, myBlog"
+      />
       <h2 className="text-3xl text-center">Welcome to Blog page</h2>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-5 mx-auto">

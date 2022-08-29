@@ -5,10 +5,11 @@ import MetaTags from "../components/Meta";
 function contact() {
   return (
     <div>
-      <Head>
-        <title>Contact</title>
-      </Head>
-      <MetaTags />
+      <MetaTags
+        title="Contacts"
+        description="this is contact page"
+        keywords="contacts, phone"
+      />
       <h2 className="text-3xl text-center">Welcome to contact page</h2>
     </div>
   );

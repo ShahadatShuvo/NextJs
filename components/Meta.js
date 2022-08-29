@@ -1,9 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
-function MetaTags() {
+function MetaTags({ title, description, keywords }) {
   return (
     <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="keywords" content="shahadat blog, blog, shahadat, about" />
       <meta name="author" content="Shahadat Hossain" />
@@ -15,4 +17,9 @@ function MetaTags() {
   );
 }
 
+MetaTags.defaultProps = {
+  title: "Shahadat Hossain",
+  description: "Shahadat Hossain's personal blog",
+  keywords: "shahadat, blog, shahadat blog, about",
+};
 export default MetaTags;

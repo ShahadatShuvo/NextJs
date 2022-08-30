@@ -1,10 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
-function MetaTags({ title, description, keywords }) {
+function MetaTags({ title, description, keywords, icon }) {
   return (
     <Head>
       <title>{title}</title>
+      <link rel="shortcut icon" href={icon} />
       <meta name="description" content={description} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="keywords" content="shahadat blog, blog, shahadat, about" />
@@ -18,6 +19,7 @@ function MetaTags({ title, description, keywords }) {
 }
 
 MetaTags.defaultProps = {
+  icon: "/favicon.ico",
   title: "Shahadat Hossain",
   description: "Shahadat Hossain's personal blog",
   keywords: "shahadat, blog, shahadat blog, about",

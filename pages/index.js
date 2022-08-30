@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <MetaTags
+        icon="/favicon.ico"
         title="Home"
         description="this is Home page"
         keywords="Home, index"

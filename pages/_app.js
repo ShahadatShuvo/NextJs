@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Navbar />
-      <div className="mx-16 mt-8 m-auto">
+      <div className="mx-4 md:mx-16 mt-8 m-auto">
         <Component {...pageProps} />
       </div>
     </div>

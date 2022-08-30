@@ -6,6 +6,7 @@ function about() {
   return (
     <div>
       <MetaTags
+        icon="/Aboutfavicon.ico"
         title="About"
         description="this is contact page"
         keywords="contacts, phone"

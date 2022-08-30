@@ -12,20 +12,32 @@ function Blogs({ postItem }) {
         description={postItem.body}
         keywords="blog, myBlog"
       />
-      <div className="flex justify-center items-center relative">
-        <div className="absolute left-0">
-          <Link href="/blog">
-            <Button size="small" variant="text" startIcon={<ArrowBackIcon />}>
-              Show All Blogs
-            </Button>
-          </Link>
+      {postItem ? (
+        <div>
+          <div className="flex justify-center items-center relative">
+            <div className="absolute left-0 top-[-20%] md:top-0">
+              <Link href="/blog">
+                <Button
+                  size="small"
+                  variant="text"
+                  startIcon={<ArrowBackIcon />}
+                >
+                  Show All Blogs
+                </Button>
+              </Link>
+            </div>
+            <h1 className="mt-8 md:mt-0">Blog id - {postItem?.id}</h1>
+          </div>
+          <h3 className="text-center mt-3 text-lg md:text-2xl ml-5 uppercase">
+            {postItem?.title}
+          </h3>
+          <p className="text-sm md:text-base text-center mt-5">
+            {postItem?.body}
+          </p>
         </div>
-        <h1>Blog id - {postItem?.id}</h1>
-      </div>
-      <h3 className="text-center mt-3 text-2xl ml-5 uppercase">
-        {postItem?.title}
-      </h3>
-      <p className="text-center mt-5">{postItem?.body}</p>
+      ) : (
+        <div>Loading...</div>
+      )}
     </div>
   );
 }

@@ -5,8 +5,6 @@ import React from "react";
 import MetaTags from "../components/Meta";
 
 function Blog({ posts }) {
-  console.log("posts: ", posts);
-
   return (
     <div>
       <MetaTags
